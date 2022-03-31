@@ -1,0 +1,37 @@
+import streamlit as st
+
+st.text('Fixed width text')
+st.markdown('_Markdown_') # see *
+st.caption('Balloons. Hundreds of them...')
+st.write(['st', 'is <', 3]) # see *
+st.title('My title')
+st.header('My header')
+st.subheader('My sub')
+
+Display data
+st.dataframe(my_dataframe)
+st.table(data.iloc[0:10])
+st.json({'foo':'bar','fu':'ba'})
+st.metric(label="Temp", value="273 K", delta="1.2 K")
+
+
+Display charts
+
+st.line_chart(data)
+st.area_chart(data)
+st.bar_chart(data)
+st.pyplot(fig)
+st.altair_chart(data)
+st.vega_lite_chart(data)
+st.plotly_chart(data)
+st.bokeh_chart(data)
+st.pydeck_chart(data)
+st.deck_gl_chart(data)
+st.graphviz_chart(data)
+st.map(data)
+
+
+
+st.multiselect('Multiselect', [1,2,3])
+st.slider('Slide me', min_value=0, max_value=10)
+st.select_slider('Slide to select', options=[1,'2'])
